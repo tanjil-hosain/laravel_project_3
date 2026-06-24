@@ -3,6 +3,7 @@
 @section('content')
     <main class="page-content">
         <form action="{{ route('product.store') }}" method="POST" enctype="multipart/form-data">
+          @csrf
             <!--breadcrumb-->
             <div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
                 <div class="breadcrumb-title pe-3">eCommerce</div>
@@ -72,7 +73,7 @@
                                 <div class="row g-3">
                                     <div class="col-12">
                                         <label for="AddCategory" class="form-label fw-bold">Category</label>
-                                        <select class="form-select" id="AddCategory">
+                                        <select class="form-select" id="AddCategory" name="catagory">
                                             <option value="0">Topwear</option>
                                             <option value="1">Bottomwear</option>
                                             <option value="2">Casual Tshirt</option>
@@ -87,8 +88,8 @@
                         <div class="card">
                             <div class="card-body">
                                 <div class="d-flex align-items-center ">
-                                    <button type="button" class="btn btn-danger px-4">Discard</button>
-                                    <button type="button" class="btn btn-primary px-4">Publish</button>
+                                    <button  class="btn btn-danger px-4">Discard</button>
+                                    <button  class="btn btn-primary px-4">Publish</button>
                                 </div>
                             </div>
                         </div>

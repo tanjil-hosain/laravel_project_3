@@ -12,7 +12,8 @@ class ProductController extends Controller
      */
     public function index()
     {
-        return view('backend.product.index');
+        $products = Product::all();
+        return view('backend.product.index' , ['items'=>$products]);
     }
 
     /**
@@ -28,7 +29,22 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $product = new Product;
+        $product->name = $request->name;
+        $product->catagories = $request->catagory;
+        $product->description = $request->description;
+        $product->price = $request->price;
+        $product->status = $request->status;
+
+        $rand_number = rand (1,20);
+        $ext_lower = strtolower($request->image->extension());
+        $file_name = $rand_number . time() . "." . $ext_lower;
+
+        $request->image->move(public_path('images'), $file_name);
+
+         $product->image = 'images/'.$file_name;
+        $product->save();
+        return redirect('admin/product')->with('success', 'Succesfully Product Added');
     }
 
     /**
