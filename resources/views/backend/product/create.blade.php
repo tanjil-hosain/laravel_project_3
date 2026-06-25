@@ -51,7 +51,7 @@
                             </div>
                             <div class="mb-4">
                                 <h5 class="mb-3">Product Price</h5>
-                                <input type="number" class="form-control" placeholder="price"
+                                <input type="text" class="form-control" placeholder="price"
                                     name="price">
                             </div>
                             <div class="mb-4">
@@ -74,10 +74,13 @@
                                     <div class="col-12">
                                         <label for="AddCategory" class="form-label fw-bold">Category</label>
                                         <select class="form-select" id="AddCategory" name="catagory">
-                                            <option value="0">Topwear</option>
-                                            <option value="1">Bottomwear</option>
-                                            <option value="2">Casual Tshirt</option>
-                                            <option value="3">Electronic</option>
+                                            <option>Select One</option>
+                                            @foreach ($items as $item )
+                                                
+                                           
+                                            
+                                            <option value="{{$item->id}}">{{$item->cat_name}}</option>
+                                         @endforeach
                                         </select>
                                     </div>
 

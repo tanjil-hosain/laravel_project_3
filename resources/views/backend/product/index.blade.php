@@ -71,20 +71,22 @@
 										
 									
 									<tr>
-										<td><img src="{{$item->image}}" alt=""></td>
+										<td><img class="" style="width: 50px" src="{{url($item->image)}}" alt=""></td>
 										<td>{{$item->name}}</td>
 										<td>{{$item->price}}</td>
 										<td>{{$item->catagory->cat_name}}</td>
 										<td>{{$item->status}}</td>
 										<td>View</td>
 									</tr>
+
 									@endforeach
+									
 								</tfoot>
 							</table>
 						</div>
 					</div>
 				</div>
-
+{{url('')}}
      </main>
 
 @endsection
