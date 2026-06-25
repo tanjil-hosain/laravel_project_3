@@ -34,6 +34,7 @@
                 </div>
             </div>
             <!--end breadcrumb-->
+            <!--end breadcrumb-->
 
             <div class="row">
                 <div class="col-12 col-lg-8">
