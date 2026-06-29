@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\CatagoryController;
+use App\Http\Controllers\CategoryAjaxController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
@@ -22,10 +23,13 @@ Route::middleware('auth')->group(function () {
 Route::prefix('admin')-> middleware('auth')->group(function () {
     Route::resource('product', ProductController::class);
     Route::resource('catagory',CatagoryController::class);
+    Route::resource('category-ajax-crud', CategoryAjaxController::class);
 });
 
 // Route::prefix('admin')->middleware('auth')->group(function (){
 //     Route::resource('catagory',CatagoryController::class);
 // });
+
+
 
 require __DIR__.'/auth.php';
