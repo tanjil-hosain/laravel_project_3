@@ -57,40 +57,68 @@
                         </div>
                         <form action="{{route('register')}}" method="POST">
                             @csrf
+<<<<<<< HEAD
 
+=======
+>>>>>>> a12ed309ab5494da2721f1f02514baf23a2ec53a
                             <div class="form-body mt-4">
                                 <form class="row g-3">
                                     <div class="col-12">
                                         <label for="inputUsername" class="form-label">Username</label>
+<<<<<<< HEAD
                                         <input type="text" name="name" class="form-control" id="inputUsername"
+=======
+                                        <input type="name" name="name" class="form-control" id="inputUsername"
+>>>>>>> a12ed309ab5494da2721f1f02514baf23a2ec53a
                                             placeholder="Jhon">
                                     </div>
                                     <div class="col-12">
                                         <label for="inputEmailAddress" class="form-label">Email Address</label>
+<<<<<<< HEAD
                                         <input type="email" class="form-control" id="inputEmailAddress"
                                             placeholder="example@user.com" name="email">
+=======
+                                        <input type="email" name="email" class="form-control" id="inputEmailAddress"
+                                            placeholder="example@user.com">
+>>>>>>> a12ed309ab5494da2721f1f02514baf23a2ec53a
                                     </div>
                                     <div class="col-12">
                                         <label for="inputChoosePassword" class="form-label">Password</label>
                                         <div class="input-group" id="show_hide_password">
+<<<<<<< HEAD
                                             <input type="password" class="form-control border-end-0"
                                                 id="inputChoosePassword" value="12345678" placeholder="Enter Password"
                                                 name="password">
+=======
+                                            <input type="password" name="password" class="form-control border-end-0"
+                                                id="inputChoosePassword" value="12345678" placeholder="Enter Password">
+>>>>>>> a12ed309ab5494da2721f1f02514baf23a2ec53a
                                             <a href="javascript:;" class="input-group-text bg-transparent"><i
                                                     class="bi bi-eye-slash-fill"></i></a>
                                         </div>
                                     </div>
                                     <div class="col-12">
+<<<<<<< HEAD
                                         <label for="inputChoosePassword" class="form-label">Confirm Password</label>
                                         <div class="input-group" id="show_hide_password">
                                             <input type="password" class="form-control border-end-0"
                                                 id="inputChoosePassword" value="12345678" placeholder="Enter Password"
                                                 name="password_confirmation">
+=======
+                                        <label for="inputChoosePassword" class="form-label">Password</label>
+                                        <div class="input-group" id="show_hide_password">
+                                            <input type="password" name="password_confirmation"
+                                                class="form-control border-end-0" id="inputChoosePassword"
+                                                value="12345678" placeholder="Enter Password">
+>>>>>>> a12ed309ab5494da2721f1f02514baf23a2ec53a
                                             <a href="javascript:;" class="input-group-text bg-transparent"><i
                                                     class="bi bi-eye-slash-fill"></i></a>
                                         </div>
                                     </div>
+<<<<<<< HEAD
 
+=======
+>>>>>>> a12ed309ab5494da2721f1f02514baf23a2ec53a
                                     <div class="col-12">
                                         <div class="form-check form-switch">
                                             <input class="form-check-input" type="checkbox"
@@ -116,7 +144,10 @@
                             </div>
                         </form>
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> a12ed309ab5494da2721f1f02514baf23a2ec53a
                     </div>
                 </div>
             </div>

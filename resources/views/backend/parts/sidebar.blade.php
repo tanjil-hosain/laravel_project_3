@@ -74,10 +74,17 @@
                           <div class="menu-title">eCommerce</div>
                       </a>
                       <ul>
+<<<<<<< HEAD
                           <li> <a href="ecommerce-add-product.html"><span
                                       class="material-symbols-outlined">arrow_right</span>Add Product</a>
                           </li>
                           <li> <a href="ecommerce-products.html"><span
+=======
+                          <li> <a href="{{route('product.create')}}"><span
+                                      class="material-symbols-outlined">arrow_right</span>Add Product</a>
+                          </li>
+                          <li> <a href="{{route('product.index')}}"><span
+>>>>>>> a12ed309ab5494da2721f1f02514baf23a2ec53a
                                       class="material-symbols-outlined">arrow_right</span>Products</a>
                           </li>
                           <li> <a href="ecommerce-customers.html"><span
@@ -94,6 +101,7 @@
                           </li>
                       </ul>
                   </li>
+<<<<<<< HEAD
                   <li>
                       <a class="has-arrow" href="javascript:;">
                           <div class="parent-icon"><span class="material-symbols-outlined">redeem</span>
@@ -397,6 +405,11 @@
                           <div class="menu-title">Support</div>
                       </a>
                   </li>
+=======
+
+
+
+>>>>>>> a12ed309ab5494da2721f1f02514baf23a2ec53a
               </ul>
               <!--end navigation-->
 
@@ -429,6 +442,7 @@
                               account_balance
                           </span><span>Earnings</span></a>
                   </li>
+<<<<<<< HEAD
 
                   <li>
                       <div class="dropdown-divider mb-0"></div>
@@ -442,6 +456,21 @@
                           </span><span>
                             Logout</span></button>
                   </li>
+=======
+                  <li><a class="dropdown-item" href="javascript:;"><span class="material-symbols-outlined me-2">
+                              cloud_download
+                          </span><span>Downloads</span></a>
+                  </li>
+                  <li>
+                      <div class="dropdown-divider mb-0"></div>
+                  </li>
+                  <form action="{{ route('logout') }}" method="POST">
+                    @csrf
+                      <li><button class="dropdown-item" href="javascript:;"><span class="material-symbols-outlined me-2">
+                                  logout
+                              </span><span>Logout</span></button>
+                      </li>
+>>>>>>> a12ed309ab5494da2721f1f02514baf23a2ec53a
                   </form>
               </ul>
           </div>
