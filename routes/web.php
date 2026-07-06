@@ -2,13 +2,16 @@
 
 use App\Http\Controllers\CatagoryController;
 use App\Http\Controllers\CategoryAjaxController;
+use App\Http\Controllers\frontend\FrontEndController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Route::get('/', [FrontEndController::class, 'index']);
 
 Route::get('/dashboard', function () {
     return view('backend.dasboard');

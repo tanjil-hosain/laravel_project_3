@@ -8,6 +8,7 @@ use DataTables;
 use Illuminate\Http\JsonResponse;
 use Yajra\DataTables\DataTables as YajraDataTables;
 
+
 class CategoryAjaxController extends Controller
 {
     /**
