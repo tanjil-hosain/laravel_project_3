@@ -3,6 +3,7 @@
 use App\Http\Controllers\CatagoryController;
 use App\Http\Controllers\CategoryAjaxController;
 use App\Http\Controllers\frontend\FrontEndController;
+use App\Http\Controllers\GoogleController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
@@ -34,5 +35,10 @@ Route::prefix('admin')-> middleware('auth')->group(function () {
 // });
 
 
+Route::controller(GoogleController::class)->group(function(){
+    Route::get('auth/google', 'redirectToGoogle')->name('auth.google');
+    Route::get('auth/google/callback', 'handleGoogleCallback');
+
+});
 
 require __DIR__.'/auth.php';
