@@ -74,18 +74,12 @@
                           <div class="menu-title">eCommerce</div>
                       </a>
                       <ul>
-<<<<<<< HEAD
-                          <li> <a href="ecommerce-add-product.html"><span
-                                      class="material-symbols-outlined">arrow_right</span>Add Product</a>
-                          </li>
-                          <li> <a href="ecommerce-products.html"><span
-=======
+
+                          <li> <a href="ecommerce-products.html"><span>
                           <li> <a href="{{route('product.create')}}"><span
                                       class="material-symbols-outlined">arrow_right</span>Add Product</a>
                           </li>
-                          <li> <a href="{{route('product.index')}}"><span
->>>>>>> a12ed309ab5494da2721f1f02514baf23a2ec53a
-                                      class="material-symbols-outlined">arrow_right</span>Products</a>
+                          <li> <a href="{{route('product.index')}}"><span></span>Products</a>
                           </li>
                           <li> <a href="ecommerce-customers.html"><span
                                       class="material-symbols-outlined">arrow_right</span>Customers</a>
