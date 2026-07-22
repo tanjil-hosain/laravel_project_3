@@ -28,5 +28,9 @@ class FrontEndController extends Controller
         $products= Product::all();
         return Inertia::render('Product', ['products'=>$products]);
     }
+    public function sendMsg(Request $request){
+
+    dd($request);
+    }
 
 }

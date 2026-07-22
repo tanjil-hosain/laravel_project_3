@@ -16,6 +16,7 @@ Route::get('/about',[FrontEndController::class, 'about']);
 Route::get('/contact',[FrontEndController::class, 'contact']);
 Route::get('/login',[FrontEndController::class, 'login']);
 Route::get('/products',[FrontEndController::class, 'products']);
+Route::post('/send',[FrontEndController::class, 'sendMsg']);
 // Route::get('/', function () {
 //     return Inertia::render('Welcome', [
 //         'canLogin' => Route::has('login'),
