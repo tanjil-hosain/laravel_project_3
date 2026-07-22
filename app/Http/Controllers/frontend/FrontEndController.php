@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\frontend;
 
 use App\Http\Controllers\Controller;
+use App\Models\Product;
 use Illuminate\Http\Request;
 use Inertia\Inertia;
 
@@ -24,7 +25,8 @@ class FrontEndController extends Controller
     }
     
     public function products(){
-        return Inertia::render('Product');
+        $products= Product::all();
+        return Inertia::render('Product', ['products'=>$products]);
     }
 
 }
