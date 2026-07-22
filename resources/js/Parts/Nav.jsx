@@ -9,7 +9,7 @@ export default function Nav() {
                     <ul className="navbar-nav">
                         <li className="nav-item">
                             <Link className="nav-link active" href="/">
-                               Home
+                                Home
                             </Link>
                         </li>
                         <li className="nav-item">
@@ -23,9 +23,14 @@ export default function Nav() {
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link disabled" href="#">
-                                Disabled
-                            </a>
+                            <Link className="nav-link" href="/login">
+                                Login
+                            </Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" href="/products">
+                              Products
+                            </Link>
                         </li>
                     </ul>
                 </div>
